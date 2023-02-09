@@ -5,7 +5,7 @@
     public $year;
     public $genre;
 
-    function __construct($_title, $_mainActor, $_year, $_genre)
+    function __construct($_title, $_mainActor, $_year, Gernes $_genre)
     {
         $this->title = $_title;
         $this->mainActor = $_mainActor;
@@ -13,9 +13,20 @@
         $this->genre = $_genre;
     }
 
-    public function getEl($el){
-        return $this->$el;
+    public function getTitle(){
+        return $this->title;
     }
+    public function getMainActor(){
+        return $this->mainActor;
+    }
+    public function getYear(){
+        return $this->year;
+    }
+    public function GetGenre(){
+        return $this->genre;
+    }
+
+
 
    } 
 

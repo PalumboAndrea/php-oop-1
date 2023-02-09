@@ -5,7 +5,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,25 +18,25 @@
     <h1>
         Titolo:
         <?php
-            print_r($braccobaldo->getEl('title'))
+            echo $braccobaldo->title
         ?>
     </h1>
     <h2>
         Attore principale:
         <?php  
-            print_r($braccobaldo->getEl('mainActor'))
+            echo $braccobaldo->mainActor
         ?>
     </h2>
     <h2>
         Anno di produzione:
         <?php  
-            print_r($braccobaldo->getEl('year'))
+            echo $braccobaldo->year
         ?>
     </h2>
     <h2>
         Genere:
         <?php  
-            print_r($braccobaldo->getEl('genre'))
+            echo $braccobaldo->genre
         ?>
     </h2>
     
